@@ -1,0 +1,58 @@
+<div class="cafe-container">
+  <header class="navbar">
+    <div class="logo">
+      <h1>☕ {{ title() }}</h1>
+    </div>
+    <nav>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>O melhor café para começar o dia, o melhor drink para terminar.</h2>
+      <p>Ambiente aconchegante, grãos selecionados e música boa.</p>
+      <a href="#cardapio" class="btn">Ver Cardápio</a>
+    </div>
+  </section>
+
+  <section id="cardapio" class="menu-section">
+    <h2>📋 Nosso Cardápio</h2>
+    
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>☕ Espresso Especial</h3>
+        <p>Grãos artesanais moídos na hora.</p>
+        <span class="price"> 8,00 euros</span>
+      </div>
+      
+      <div class="menu-item">
+        <h3>🥐 Croissant de Queijo</h3>
+        <p>Massa folhada quentinha e crocante.</p>
+        <span class="price"> 12,00 euros</span>
+      </div>
+
+      <div class="menu-item">
+        <h3>🍹 Gin Tônico Tropical</h3>
+        <p>Gin premium, tônica, toque de maracujá e especiarias.</p>
+        <span class="price"> 28,euros</span>
+      </div>
+
+      <div class="menu-item">
+        <h3>🍺 Cerveja Artesanal IPA</h3>
+        <p>Local, encorpada e extremamente refrescante.</p>
+        <span class="price"> 18,00 euros</span>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <p>📍 Rua do Café, 123 - Centro</p>
+    <p>🕒 Aberto de Terça a Domingo, das 08h às 23h</p>
+    <p>© 2026 {{ title() }} - Todos os direitos reservados.</p>
+  </footer>
+</div>
+
+<router-outlet></router-outlet>
